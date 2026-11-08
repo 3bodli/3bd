@@ -1,6 +1,6 @@
 // ===== Supabase (Project Settings > API) =====
-var SUPABASE_URL = "https://kgwzddwblqidieazapre.supabase.co";
-var SUPABASE_ANON_KEY = "sb_publishable_BuQaqysGzPvlvCSGBPuLag_8bQ6VtEz";
+var SUPABASE_URL = "https://riyqscmcrupswyxeelsa.supabase.co";
+var SUPABASE_ANON_KEY = "sb_publishable_CgW_z8fcu3GTiO6zpXtHuA_eW8v22_S";
 
 // ===== Rates, fees, wallet =====
 var RATE_SYP = 12400;  // SYP per 1 USD (demo number)
