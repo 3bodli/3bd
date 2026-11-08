@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>3bod – Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>.card{border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px;background:var(--surface)}.card .r{display:flex;justify-content:space-between;gap:10px;padding:3px 0;font-size:.92rem}.card .r span:first-child{color:var(--muted)}.card .r span:last-child{direction:ltr;text-align:right;word-break:break-all}.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.acts select{flex:1;min-width:140px}.acts button{width:auto;margin:0;padding:10px 14px}</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">3bod</div><div class="hr"><span>Admin</span><button class="pill" id="out">تسجيل الخروج</button></div></header>
+<div style="height:46px"></div>
+<section id="login" class="on">
+<h2>دخول الأدمن</h2>
+<label for="l-mail">البريد الإلكتروني</label><input id="l-mail" type="email" class="ltr" autocomplete="email">
+<label for="l-pass">كلمة المرور</label><input id="l-pass" type="password" class="ltr" autocomplete="current-password">
+<button class="btn" id="l-go">دخول</button>
+<p class="note" id="l-msg"></p>
+</section>
+<section id="panel" hidden>
+<h2>الحوالات</h2>
+<div class="row"><select id="flt"><option value="all">الكل</option><option value="verify">دفعت وبانتظار تأكيدك</option><option value="wait">بانتظار الدفع</option><option value="1">تم استلام الدفعة</option><option value="2">قيد المعالجة</option><option value="3">أُرسلت إلى شام كاش</option><option value="4">تم التسليم</option></select><button class="pill" id="rf">تحديث</button></div>
+<div id="list"></div>
+</section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
